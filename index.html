@@ -4,27 +4,35 @@
 
 <style>
 	
-.body {
+body {
 
 	margin-left: 5%;
+	background-color: black;
+	color: white;
+	font-family: 'Baloo Chettan 2', cursive;
 }
 
 </style>
 
 <head>
 	<title>Where's the Snow?!</title>
+	<script src="https://kit.fontawesome.com/98e5625577.js" crossorigin="anonymous"></script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Chettan+2&display=swap" rel="stylesheet" type="text/css">
 </head>
+
 <body>
 
 	<h1>Where's the Snow?!</h1>
+	<i class="fas fa-skiing"></i>
 
 	<section>
+
 	<form>
-	  <p>Update details below to receive snow updates</p>
+	  <p>Add details below to receive snow updates</p>
 
 
 	  <label>Email:</label>
-	  <input type="text" id="email" name="email">
+	  <input type="text" id="email" name="email"><br><br>
 
 
 	  <label>Mobile:</label>
@@ -32,14 +40,18 @@
 
 	  <div>
       <p>Which region do you want updates for?</p>
-        <input id="newbie" type="radio" name="levels" value="newbie">
-        <label for="newbie">Italian Alps</label><br>
-        <input id="intermediate" type="radio" name="levels" value="intermediate">
-        <label for="intermediate">Austrian Alps</label><br>
-        <input id="master" type="radio" name="levels" value="master">
-        <label for="master">French Alps</label>
-        <input id="swiss" type="radio" name="levels" value="swiss">
-        <label for="swiss">Swiss Alps</label>
+        <input id="italian" type="checkbox" name="levels" value="italian">
+        <label for="italian">Italian Alps</label><br>
+        <input id="austrian" type="checkbox" name="levels" value="austrian">
+        <label for="austrian">Austrian Alps</label><br>
+        <input id="french" type="checkbox" name="levels" value="french">
+        <label for="french">French Alps</label><br>
+        <input id="swiss" type="checkbox" name="levels" value="swiss">
+        <label for="swiss">Swiss Alps</label><br>
+        <input id="east-pyranees" type="checkbox" name="levels" value="east-pyranees">
+        <label for="east-pyranees">East Pyranees</label><br>
+        <input id="west-pyranees" type="checkbox" name="levels" value="west-pyranees">
+        <label for="west-pyranees">West Pyranees</label><br>
       </div>
       <!-- Only change code above this line -->
 	  <input type="submit" name="submit" value="Submit">
